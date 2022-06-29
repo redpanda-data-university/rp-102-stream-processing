@@ -10,4 +10,4 @@ The full tutorial is contained in the [course][course-link], and the transform c
 
 
 [course-link]: https://university.redpanda.com/courses/hands-on-redpanda-stream-processing
-[mask-card]: /mask-card
+[mask-card]: /01-stream-processing-basics/mask-card/
