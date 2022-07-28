@@ -1,0 +1,31 @@
+{
+  "type": "record",
+  "name": "Alert",
+  "namespace": "com.example.model",
+  "fields": [
+    {
+      "name": "type",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "credit_card",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "timestamp",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
+    }
+  ]
+}

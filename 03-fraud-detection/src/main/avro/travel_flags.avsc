@@ -1,0 +1,41 @@
+{
+  "type": "record",
+  "name": "TravelFlags",
+  "namespace": "com.example.model",
+  "fields": [
+    {
+      "name": "id",
+      "type": "int"
+    },
+    {
+      "name": "enabled",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
+    },
+    {
+      "name": "credit_card",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "created_at",
+      "type": [
+        "null",
+        {
+          "type": "long",
+          "connect.version": 1,
+          "connect.name": "org.apache.kafka.connect.data.Timestamp",
+          "logicalType": "timestamp-millis"
+        }
+      ],
+      "default": null
+    }
+  ],
+  "connect.name": "com.example.model.TravelFlags"
+}

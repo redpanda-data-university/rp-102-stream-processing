@@ -1,0 +1,57 @@
+{
+  "type": "record",
+  "name": "Purchase",
+  "namespace": "com.example.model",
+  "fields": [
+    {
+      "name": "id",
+      "type": "int"
+    },
+    {
+      "name": "category",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "amount",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "credit_card",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "distance_from_billing_zip",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "timestamp",
+      "type": [
+        "null",
+        {
+          "type": "long",
+          "connect.version": 1,
+          "connect.name": "org.apache.kafka.connect.data.Timestamp",
+          "logicalType": "timestamp-millis"
+        }
+      ],
+      "default": null
+    }
+  ],
+  "connect.name": "com.example.model.Purchase"
+}
