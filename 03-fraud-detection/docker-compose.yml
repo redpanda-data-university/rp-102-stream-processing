@@ -46,7 +46,6 @@ services:
     depends_on:
       - redpanda
       - postgres
-      - elasticsearch
     ports:
       - 8083:8083
     environment:
