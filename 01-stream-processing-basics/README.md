@@ -6,8 +6,8 @@ In Chapter 1 of the [Hands-on Redpanda: Stream Processing course][course-link], 
 - Writes the masked records to a new output topic: `purchases._masked_`
 
 The full tutorial is contained in the [course][course-link], and the transform code can be viewed in the [01-stream-processing-basics
-/mask-card/][mask-card] directory in this repo.
+/transforms/mask-card-complete/][mask-card] directory in this repo.
 
 
 [course-link]: https://university.redpanda.com/courses/hands-on-redpanda-stream-processing
-[mask-card]: /01-stream-processing-basics/mask-card/
+[mask-card]: /01-stream-processing-basics/transforms/mask-card-complete/
