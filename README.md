@@ -1,7 +1,7 @@
 # Redpanda University
 [Redpanda University][rpu] is a series of courses that will teach you the basics of event streaming, and will help you gain hands-on experience with a new data streaming platform called [Redpanda][rp].
 
-## Course 3. Hands-on With Redpanda: Stream Processing
+## RP 102: Hands-on With Redpanda - Stream Processing
 This repository contains code examples for the [Hands-on With Redpanda: Stream Processing][course-link] course from [Redpanda University][rpu]. The following lessons are included:
 
 
