@@ -59,7 +59,7 @@ class HighTravelDistanceTopology {
     KTable<String, TravelFlags> travelFlags =
         builder.table("travel_flags", travelFlagsConsumerOptions);
 
-    Joined joinParams =
+    Joined<String, Purchase, TravelFlags> joinParams =
         Joined.with(
             Serdes.String(), /* key */
             AvroSerdes.Purchase(REDPANDA_SCHEMA_REGISTRY_URL), /* left value */
@@ -69,7 +69,7 @@ class HighTravelDistanceTopology {
         purchases
             .filter(
                 (key, value) -> value.getDistanceFromBillingZip() >= HIGH_TRAVEL_DISTANCE_THRESHOLD)
-            .leftJoin(travelFlags, (left, right) -> new JoinValue(left, right != null), joinParams);
+            .leftJoin(travelFlags, (left, right) -> new JoinValue(left, right != null && right.getEnabled()), joinParams);
 
     KStream<String, Alert> alerts =
         joined.flatMapValues(
